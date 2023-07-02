@@ -1,0 +1,345 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "9c320f22-b9d4-407c-a1c5-9ccd91a7c8b0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "marks=89"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "392d3a76-b758-40d8-beb2-1e47db41163d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your marks 90\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You will be part of A0 batch\n"
+     ]
+    }
+   ],
+   "source": [
+    "marks= int(input(\"Enter your marks\"))\n",
+    "if marks>=80:\n",
+    "    print(\"You will be part of A0 batch\")\n",
+    "elif marks>=60 and marks< 80:\n",
+    "        print(\"You will be part of A1 batch\")\n",
+    "elif marks>=40 and marks<60:\n",
+    "            print(\"You will be part of A2 batch\")\n",
+    "elif marks<40:\n",
+    "                print(\"You will be part of A3 batch\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a9965dfa-0850-4cae-922a-c7729a5ceb13",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "What is the price of the object? 1190\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I will not purchase the object\n",
+      "Reduce the price to 1000 then I will purchase it\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "What is the new price of the object? 1000\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I will purchase the object\n"
+     ]
+    }
+   ],
+   "source": [
+    "price= int(input(\"What is the price of the object?\"))\n",
+    "if price<=1000:\n",
+    "    print(\"I will purchase the object\")\n",
+    "else:\n",
+    "    print(\"I will not purchase the object\")\n",
+    "    if price<1200:\n",
+    "        print(\"Reduce the price to 1000 then I will purchase it\")\n",
+    "        price= int(input(\"What is the new price of the object?\"))\n",
+    "        if price<=1000:\n",
+    "            print(\"I will purchase the object\")\n",
+    "    else:\n",
+    "        print(\"This is too much\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "b69a4c5d-bb82-4268-b10c-a03d5695bef2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[1,2,3,4,5,6,7,8,9]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "8950a0f0-b50d-4fc5-9182-97b92bd943a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in l:\n",
+    "    print (i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "8cc1c767-2b49-4d75-99fb-6c9b7a1bbfe4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in l:\n",
+    "    print (l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "ee979ee3-300a-4cd0-91b3-78888cf58559",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1= []\n",
+    "for i in l:\n",
+    "    print(i+1)\n",
+    "    l1.append(i+1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "408b5416-94f3-4f27-ac89-e0069d72baad",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 4, 5, 6, 7, 8, 9, 10]"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "5d62cc5a-951a-4891-bfe2-cfa0ac06fb5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bhavya\n",
+      "sharma\n",
+      "indian\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[\"bhavya\",\"sharma\",\"indian\"]\n",
+    "l1=[]\n",
+    "for i in l:\n",
+    "    print(i)\n",
+    "    l1.append(i.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "83557d11-1c3a-487b-8719-e51395d1c635",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Bhavya', 'Sharma', 'Indian']"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "926d115a-486a-4862-8b61-2da6d0cbcf7b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l= [1,2,3,4,4,\"bhavya\",\"sharma\",34.564,\"indian\"]\n",
+    "l1_num=[]\n",
+    "l2_str=[]\n",
+    "for i in l:\n",
+    "    if type(i)==int or type(i)==float:\n",
+    "        l1_num.append(i)\n",
+    "    elif type(i)==str:\n",
+    "        l2_str.append(i.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "fb3b0985-d39a-4c73-9569-e9303f38a19d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 4, 34.564]"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1_num"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "026e816e-7ac3-4f60-b6d8-2146589fb328",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Bhavya', 'Sharma', 'Indian']"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2_str"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5ac22490-dd7d-4bce-85a2-c816ad2af750",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
